@@ -18,11 +18,25 @@ export const AddCategory = ({setCategories}) => {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <input 
+            <div className="sb-example-1">
+                <div className="search">
+                    <input 
+                    type="text" 
+                    className="searchTerm" placeholder="Searching" 
+                    onChange={handleInputChange}
+                    />
+                    <button onClick={handleSubmit} className="searchButton">
+                    <i className="fa fa-search"></i>
+                </button>
+                </div>
+            </div>
+
+                {/*<input 
                     type="text"
                     value={inputValue}
+                    placeholder="Serching..."
                     onChange={handleInputChange}
-                />
+                /> */}
             </form>
         </>
     )
